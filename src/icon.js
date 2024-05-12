@@ -1,0 +1,1 @@
+export { default as Icon } from '@mui/icons-material/Place';
