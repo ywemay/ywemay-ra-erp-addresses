@@ -16,3 +16,10 @@ export const addresses = {
   list, edit, create, show,
   options: { label: 'addresses.addresses' }
 }
+
+export const people_addresses = { 
+  name: "people_addresses",
+  icon,
+  list, edit, create, show,
+  options: { label: 'people.addresses' }
+ }
