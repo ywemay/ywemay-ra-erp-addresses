@@ -1,27 +1,17 @@
 import {
-  TextInput,
   SimpleForm,
 } from "react-admin";
-import { CountrySelectInput } from '../inputs';
+import { 
+  CountrySelectInput,
+  ZipInput, CityInput, ProvinceInput, AddressInput
+} from '../inputs';
 
 export function Form(props = {}) {
   return <SimpleForm {...props}>
     <CountrySelectInput defaultValue="CN" />
-    <TextInput
-      label="address.zip"
-      source="zip"
-      />
-    <TextInput
-      label="address.province"
-      source="province"
-      />
-    <TextInput
-      label="address.city"
-      source="city"
-      />
-    <TextInput
-      label="address.address"
-      source="address"
-      />
+    <ZipInput />
+    <CityInput />
+    <ProvinceInput />
+    <AddressInput />
   </SimpleForm>
 }

@@ -1,21 +1,7 @@
-import {
-  SimpleShowLayout,
-} from 'react-admin'
-import { 
-  CountrySelectField,
-  ZipField,
-  ProvinceField,
-  CityField,
-  AddressField,
-} from "../fields";
+import { Show as RaShow } from 'react-admin'
+import { Layout } from './Layout'
 
-export function Show(props) {
-  return <SimpleShowLayout {...props}>
-    <ZipField />
-    <CountrySelectField />
-    <ProvinceField />
-    <CityField />
-    <ProvinceField />
-    <AddressField />
-  </SimpleShowLayout>
+export function Show (props) {
+  return <RaShow {...props}>
+    <Layout /></RaShow>
 }

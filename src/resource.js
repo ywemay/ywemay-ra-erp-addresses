@@ -6,10 +6,12 @@ import { List as list } from './list'
 import { Show as show } from './show'
 import { Icon as icon } from './icon'
 
-const resource="addresses";
+const name="addresses";
+
+export const resource = name;
 
 export const addresses = {
-  resource,
+  name,
   icon,
   list, edit, create, show,
   options: { label: 'addresses.addresses' }

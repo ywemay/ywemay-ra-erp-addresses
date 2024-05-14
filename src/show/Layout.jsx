@@ -1,4 +1,6 @@
-import { Datagrid } from "react-admin";
+import {
+  SimpleShowLayout,
+} from 'react-admin'
 import { 
   CountrySelectField,
   ZipField,
@@ -7,13 +9,12 @@ import {
   AddressField,
 } from "../fields";
 
-export function Grid(props = {}) {
-
-  return <Datagrid rowClick="edit" {...props}>
+export function Layout(props) {
+  return <SimpleShowLayout {...props}>
+    <ZipField />
     <CountrySelectField />
     <ProvinceField />
-    <ZipField />
     <CityField />
     <AddressField />
-  </Datagrid>
+  </SimpleShowLayout>
 }

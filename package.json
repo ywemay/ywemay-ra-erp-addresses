@@ -7,18 +7,25 @@
   "repository": "git@github.com:ywemay/ywemay-ra-erp-addresses.git",
   "author": "Chibuc Dorin",
   "license": "MIT",
+  "scripts": {
+    "dev": "vite"
+  },
   "peerDependencies": {
-    "@mui/icons-material": "^5.14.18",
-    "@mui/material": "^5.15.15",
     "react": "^18.2.0",
-    "react-admin": "^4.16.16",
-    "ywemay-ra-erp": "^1.0.6"
+    "react-admin": "^4.16.16"
   },
   "devDependencies": {
-    "@mui/icons-material": "^5.14.18",
     "@mui/material": "^5.15.15",
+    "@vitejs/plugin-react": "^4.2.1",
     "react": "^18.2.0",
     "react-admin": "^4.16.16",
-    "ywemay-ra-erp": "^0.0.7"
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.51.4",
+    "react-is": "^16.3.1",
+    "vite": "^5.2.11",
+    "ywemay-ra-erp-data-provider-mock": "^1.0.1"
+  },
+  "dependencies": {
+    "ywemay-ra-icons": "^1.0.0"
   }
 }
