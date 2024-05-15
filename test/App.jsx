@@ -3,7 +3,9 @@ import { dataProvider } from 'ywemay-ra-erp-data-provider-mock'
 import { 
   addresses,
   people_addresses,
-} from '../'
+  } from '../'
+import { List as list } from '../list'
+addresses.list = list;
 
 export default function App() {
   return <Admin disableTelemetry dataProvider={dataProvider}>
